@@ -17,6 +17,7 @@ public class TestPageHelper {
 	@Test
 	public void testPageHelper() throws Exception {
 		//初始化spring容器
+		@SuppressWarnings("resource")
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:spring/applicationContext-dao.xml");
 		//从容器中获得mapper代理对象
 		TbItemMapper itemMapper = applicationContext.getBean(TbItemMapper.class);
@@ -30,6 +31,5 @@ public class TestPageHelper {
 		PageInfo<TbItem> pageInfo = new PageInfo<>(list);
 		System.out.println("总记录数：" + pageInfo.getTotal());
 		System.out.println("总页数：" + pageInfo.getPages());
-		
 	}
 }

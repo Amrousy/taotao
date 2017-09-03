@@ -48,3 +48,13 @@
 /taotao-manager/taotao-manager-service/target
 /taotao-manager/taotao-manager-service/.classpath
 /taotao-manager/taotao-manager-service/.project
+/taotao-content/.project
+/taotao-content/.settings
+/taotao-content/taotao-content-interface/.settings
+/taotao-content/taotao-content-interface/target
+/taotao-content/taotao-content-interface/.classpath
+/taotao-content/taotao-content-interface/.project
+/taotao-content/taotao-content-service/.settings
+/taotao-content/taotao-content-service/target
+/taotao-content/taotao-content-service/.classpath
+/taotao-content/taotao-content-service/.project

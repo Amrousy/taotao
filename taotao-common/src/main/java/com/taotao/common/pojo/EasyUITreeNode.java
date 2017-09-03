@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 public class EasyUITreeNode implements Serializable{
 
+	private static final long serialVersionUID = 6197855129514531882L;
+	
 	private long id;
 	private String text;
 	private String state;

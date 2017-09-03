@@ -9,6 +9,7 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 
 	<context:component-scan base-package="com.taotao.protal.controller"></context:component-scan>
+	<context:property-placeholder location="classpath:resource/resource.properties" />
 
 	<mvc:annotation-driven />
 	<bean
@@ -19,6 +20,8 @@
 	<!-- 引用dubbo服务 -->
 	<dubbo:application name="taotao-protal-web" />
 	<dubbo:registry protocol="zookeeper" address="192.168.25.133:2181" />
+	<dubbo:reference interface="com.taotao.content.service.ContentService"
+		id="contentService" />
 
 	<mvc:resources location="/WEB-INF/js/" mapping="/js/**" />
 	<mvc:resources location="/WEB-INF/css/" mapping="/css/**" />
