@@ -6,6 +6,7 @@ import com.taotao.common.pojo.EasyUIDataGridResult;
 import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.pojo.TbContent;
 
+
 public interface ContentService {
 	EasyUIDataGridResult getContentList(Long id, Integer page, Integer size);
 
